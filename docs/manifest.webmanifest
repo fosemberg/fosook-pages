@@ -1,0 +1,20 @@
+{
+  "name": "Fosook — готовим вдвоём",
+  "short_name": "Fosook",
+  "description": "Кооперативная 3D-игра про кухню. Прямое соединение между игроками, без серверов.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#080a10",
+  "theme_color": "#10131c",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

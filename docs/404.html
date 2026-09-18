@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <!-- viewport-fit=cover lets the layout paint behind the notch; the CSS then
-         pads with env(safe-area-inset-*). user-scalable=no keeps a double-tap
-         during a frantic round from zooming the playfield. -->
+         pads with env(safe-area-inset-*). The scale clamp is honoured by
+         Android and ignored by every browser on iOS, so it is only the first
+         of three: `touch-action` in base.css and the gesture handlers in
+         src/ui/viewportLock.ts keep a pinch from zooming the playfield on the
+         phones that do not listen to this. -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
     />
     <meta name="theme-color" content="#10131c" />
     <meta name="color-scheme" content="dark" />
@@ -21,10 +24,10 @@
     <title>Fosook — готовим вдвоём</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/index-CWEmtjGZ.js"></script>
+    <script type="module" crossorigin src="./assets/index-jmYZ6iQE.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-CbXtAM7H.js">
     <link rel="modulepreload" crossorigin href="./assets/vendor-BbmCxToy.js">
-    <link rel="stylesheet" crossorigin href="./assets/style-Bkl7G1Tt.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-qfRbZ2Lk.css">
   </head>
   <body>
     <div id="root"></div>

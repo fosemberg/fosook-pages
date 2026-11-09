@@ -1,8 +1,8 @@
 // Fosook — the game kept on this device for playing offline.
 // Written by the build (src/pwa/serviceWorker.ts); do not edit by hand.
-const VERSION = "df1a873b3d4c";
+const VERSION = "363ac17b6272";
 const CACHE = "fosook-" + VERSION;
-const PRECACHE = ["THIRD_PARTY_LICENSES.txt","apple-touch-icon.png","assets/index-BzgcB7RF.js","assets/jsQR-BZfqIBYG.js","assets/rolldown-runtime-CbXtAM7H.js","assets/style-BI55uwZO.css","assets/vendor-BbmCxToy.js","icon.svg","index.html","manifest.webmanifest"];
+const PRECACHE = ["THIRD_PARTY_LICENSES.txt","apple-touch-icon.png","assets/index-JJz3r43k.js","assets/jsQR-BZfqIBYG.js","assets/rolldown-runtime-CbXtAM7H.js","assets/style-DW8JMB-d.css","assets/vendor-C7-cG__2.js","icon.svg","index.html","manifest.webmanifest"];
 const NAV_TIMEOUT_MS = 3500;
 const scope = () => new URL(self.registration.scope);
 const shellUrl = () => new URL('index.html', scope()).href;
